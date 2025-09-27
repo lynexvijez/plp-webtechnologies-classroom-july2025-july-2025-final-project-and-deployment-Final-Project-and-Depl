@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lynex Careers - AI-Powered Job Matching</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <i class="fas fa-brain"></i>
+          <div class="logo-text">Lynex <span>Careers</span></div>
+        </div>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="pages/jobs.html" class="nav-link">Jobs</a></li>
+            <li>
+              <a href="pages/companies.html" class="nav-link">Companies</a>
+            </li>
+            <li>
+              <a href="pages/career-path.html" class="nav-link">Career Path</a>
+            </li>
+            <li>
+              <a href="pages/resources.html" class="nav-link">Resources</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="auth-buttons">
+          <a href="#" class="btn btn-outline" id="login-btn">Sign In</a>
+          <a
+            href="pages/dashboard.html"
+            class="btn btn-primary"
+            id="dashboard-btn"
+            style="display: none"
+            >Dashboard</a
+          >
+        </div>
+
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Find Your Dream Job with AI-Powered Matching</h1>
+          <p>
+            Lynex Careers uses advanced artificial intelligence to match your
+            skills, personality, and career goals with the perfect opportunities
+            at Lynex Softwares and AI.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="pages/jobs.html" class="btn btn-accent">Find Jobs</a>
+            <a
+              href="pages/career-path.html"
+              class="btn btn-outline"
+              style="color: white; border-color: white"
+              >AI Career Path</a
+            >
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number">127</div>
+              <div class="stat-label">Open Positions</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">94%</div>
+              <div class="stat-label">Match Accuracy</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">2.1k</div>
+              <div class="stat-label">Hired This Year</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose Lynex Careers?</h2>
+          <p>
+            Our platform goes beyond traditional job boards with cutting-edge
+            features designed for the modern job seeker.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>AI-Powered Matching</h3>
+            <p>
+              Our algorithm analyzes your profile against job requirements and
+              company culture for perfect matches.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Career Path Predictions</h3>
+            <p>
+              See where your career could go with personalized growth
+              projections and skill recommendations.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-vr-cardboard"></i>
+            </div>
+            <h3>Virtual Office Tours</h3>
+            <p>
+              Experience our workspaces and culture through immersive 360°
+              virtual tours before applying.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>One-Click Applications</h3>
+            <p>
+              Apply to multiple positions with a single profile. No more filling
+              out repetitive forms.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Real-Time Chat</h3>
+            <p>
+              Communicate directly with hiring managers and recruiters through
+              our integrated chat system.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>Gamified Assessments</h3>
+            <p>
+              Showcase your skills through interactive challenges instead of
+              traditional tests.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Job Listings Section -->
+    <section class="job-listings">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Job Opportunities</h2>
+          <p>Browse through our current openings at Lynex Softwares and AI</p>
+        </div>
+
+        <div class="filters">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              placeholder="Search jobs by title, skill, or keyword"
+              id="job-search"
+            />
+          </div>
+
+          <select class="filter-select" id="department-filter">
+            <option>All Departments</option>
+            <option>Engineering</option>
+            <option>Product</option>
+            <option>Design</option>
+            <option>Marketing</option>
+            <option>Sales</option>
+          </select>
+
+          <select class="filter-select" id="location-filter">
+            <option>All Locations</option>
+            <option>Remote</option>
+            <option>San Francisco</option>
+            <option>New York</option>
+            <option>London</option>
+            <option>Tokyo</option>
+          </select>
+
+          <select class="filter-select" id="type-filter">
+            <option>All Job Types</option>
+            <option>Full-time</option>
+            <option>Part-time</option>
+            <option>Contract</option>
+            <option>Internship</option>
+          </select>
+        </div>
+
+        <div class="jobs-grid" id="jobs-container">
+          <!-- Jobs will be populated by JavaScript -->
+        </div>
+
+        <div style="text-align: center; margin-top: 40px">
+          <a href="pages/jobs.html" class="btn btn-outline">View All Jobs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Matching Section -->
+    <section class="ai-matching">
+      <div class="container">
+        <div class="matching-container">
+          <div class="matching-content">
+            <h2>How Our AI Matching Works</h2>
+            <p>
+              Our proprietary algorithm evaluates multiple dimensions to find
+              your perfect job match at Lynex.
+            </p>
+
+            <div class="matching-steps">
+              <div class="matching-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4>Skill Analysis</h4>
+                  <p>
+                    We analyze your technical skills, experience level, and
+                    proficiency across different technologies.
+                  </p>
+                </div>
+              </div>
+
+              <div class="matching-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4>Personality Assessment</h4>
+                  <p>
+                    Understand your work style, communication preferences, and
+                    team dynamics compatibility.
+                  </p>
+                </div>
+              </div>
+
+              <div class="matching-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4>Career Aspirations</h4>
+                  <p>
+                    Factor in your long-term goals, desired growth trajectory,
+                    and learning objectives.
+                  </p>
+                </div>
+              </div>
+
+              <div class="matching-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                  <h4>Cultural Fit</h4>
+                  <p>
+                    Match you with teams and projects that align with your
+                    values and work environment preferences.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="matching-visual">
+            <div>
+              <div class="match-percentage">94%</div>
+              <div class="match-label">Average Match Score</div>
+              <p style="text-align: center; margin-top: 20px; opacity: 0.8">
+                Based on successful placements in the last 6 months
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Lynex Careers</h3>
+            <p>
+              The next-generation job platform powered by artificial
+              intelligence, connecting talent with opportunities at Lynex
+              Softwares and AI.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>For Candidates</h3>
+            <ul class="footer-links">
+              <li><a href="pages/jobs.html">Browse Jobs</a></li>
+              <li><a href="pages/career-path.html">Career Path</a></li>
+              <li><a href="pages/resources.html">Skill Assessment</a></li>
+              <li><a href="pages/dashboard.html">Application Dashboard</a></li>
+              <li><a href="pages/resources.html">Resource Center</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>For Employers</h3>
+            <ul class="footer-links">
+              <li><a href="#">Post a Job</a></li>
+              <li><a href="#">Talent Search</a></li>
+              <li><a href="#">Employer Branding</a></li>
+              <li><a href="#">Recruitment Analytics</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Lynex Softwares and AI
+              </li>
+              <li><i class="fas fa-phone"></i> +254 712 345 678</li>
+              <li><i class="fas fa-envelope"></i> careers@lynexsoftware.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2023 Lynex Softwares and AI. All rights reserved. |
+            <a href="#" style="color: white">Privacy Policy</a> |
+            <a href="#" style="color: white">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/jobs.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

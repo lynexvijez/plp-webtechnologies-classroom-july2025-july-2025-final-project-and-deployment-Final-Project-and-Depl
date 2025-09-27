@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Career Path - Lynex Careers</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <i class="fas fa-brain"></i>
+          <div class="logo-text">Lynex <span>Careers</span></div>
+        </div>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="jobs.html" class="nav-link">Jobs</a></li>
+            <li><a href="companies.html" class="nav-link">Companies</a></li>
+            <li>
+              <a href="career-path.html" class="nav-link active">Career Path</a>
+            </li>
+            <li><a href="resources.html" class="nav-link">Resources</a></li>
+          </ul>
+        </nav>
+
+        <div class="auth-buttons">
+          <a href="#" class="btn btn-outline" id="login-btn">Sign In</a>
+          <a
+            href="dashboard.html"
+            class="btn btn-primary"
+            id="dashboard-btn"
+            style="display: none"
+            >Dashboard</a
+          >
+        </div>
+
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Career Path Hero -->
+    <section class="path-hero">
+      <div class="container">
+        <h1>AI Career Path</h1>
+        <p>
+          Discover your potential career trajectory at Lynex with our AI-powered
+          path predictions
+        </p>
+      </div>
+    </section>
+
+    <!-- Path Analysis Section -->
+    <section class="features">
+      <div class="container">
+        <div class="path-container">
+          <div class="path-visual">
+            <div style="text-align: center">
+              <i
+                class="fas fa-route"
+                style="
+                  font-size: 4rem;
+                  color: var(--primary);
+                  margin-bottom: 20px;
+                "
+              ></i>
+              <h3>Your Career Roadmap</h3>
+              <p>
+                Visualize your growth potential based on your skills and goals
+              </p>
+              <div class="path-progress">
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 65%"></div>
+                </div>
+                <div class="progress-labels">
+                  <span>Current</span>
+                  <span>5-Year Goal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="path-content">
+            <h2>Personalized Career Development</h2>
+            <p>
+              Our AI analyzes your profile to create a customized career path
+              with specific milestones and skill recommendations.
+            </p>
+
+            <div class="path-steps">
+              <div class="path-step">
+                <div class="step-icon">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="step-content">
+                  <h4>Current Profile Analysis</h4>
+                  <p>
+                    We assess your current skills, experience, and career
+                    aspirations.
+                  </p>
+                </div>
+              </div>
+
+              <div class="path-step">
+                <div class="step-icon">
+                  <i class="fas fa-bullseye"></i>
+                </div>
+                <div class="step-content">
+                  <h4>Goal Setting</h4>
+                  <p>Define your short-term and long-term career objectives.</p>
+                </div>
+              </div>
+
+              <div class="path-step">
+                <div class="step-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="step-content">
+                  <h4>Path Generation</h4>
+                  <p>
+                    Our AI creates a personalized roadmap with milestones and
+                    skill development recommendations.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 30px">
+              <a href="#" class="btn btn-primary" id="start-path-btn"
+                >Start Your Path Analysis</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="ai-matching">
+      <div class="container">
+        <div class="section-header" style="text-align: left; color: white">
+          <h2>Success Stories</h2>
+          <p>
+            See how our AI career path has helped employees achieve their goals
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <h3>From Intern to Lead</h3>
+            <p>
+              Maria started as an intern and, following her AI-generated path,
+              became a team lead in 3 years.
+            </p>
+            <div class="story-details">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="year">2020</span>
+                  <span class="role">Software Engineering Intern</span>
+                </div>
+                <div class="timeline-item">
+                  <span class="year">2021</span>
+                  <span class="role">Junior Developer</span>
+                </div>
+                <div class="timeline-item">
+                  <span class="year">2023</span>
+                  <span class="role">Team Lead</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <h3>Career Pivot Success</h3>
+            <p>
+              David transitioned from marketing to product management with our
+              skill development roadmap.
+            </p>
+            <div class="story-details">
+              <div class="skills-developed">
+                <span class="skill">Product Strategy</span>
+                <span class="skill">User Research</span>
+                <span class="skill">Agile Methodology</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Rapid Advancement</h3>
+            <p>
+              Sarah accelerated her career growth by 40% using our AI-powered
+              milestone tracking.
+            </p>
+            <div class="story-details">
+              <div class="achievements">
+                <div class="achievement">
+                  <i class="fas fa-award"></i>
+                  <span>2 promotions in 18 months</span>
+                </div>
+                <div class="achievement">
+                  <i class="fas fa-chart-line"></i>
+                  <span>40% salary increase</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Development Section -->
+    <section class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Skill Development Roadmap</h2>
+          <p>
+            Based on popular career paths at Lynex, here are the key skills we
+            help you develop
+          </p>
+        </div>
+
+        <div class="skills-roadmap">
+          <div class="path-category">
+            <h3>Technical Track</h3>
+            <div class="skill-levels">
+              <div class="level">
+                <h4>Junior → Mid-Level</h4>
+                <ul>
+                  <li>Advanced programming languages</li>
+                  <li>System design fundamentals</li>
+                  <li>Code review best practices</li>
+                </ul>
+              </div>
+              <div class="level">
+                <h4>Mid-Level → Senior</h4>
+                <ul>
+                  <li>Architecture patterns</li>
+                  <li>Mentoring skills</li>
+                  <li>Technical leadership</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="path-category">
+            <h3>Management Track</h3>
+            <div class="skill-levels">
+              <div class="level">
+                <h4>Individual Contributor → Manager</h4>
+                <ul>
+                  <li>Project management</li>
+                  <li>Team leadership</li>
+                  <li>Stakeholder communication</li>
+                </ul>
+              </div>
+              <div class="level">
+                <h4>Manager → Director</h4>
+                <ul>
+                  <li>Strategic planning</li>
+                  <li>Budget management</li>
+                  <li>Organizational design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="ai-matching"
+      style="
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+      "
+    >
+      <div class="container">
+        <div class="cta-content" style="text-align: center; color: white">
+          <h2>Ready to Map Your Career Future?</h2>
+          <p>
+            Start your personalized career path analysis today and discover
+            where your Lynex journey could take you.
+          </p>
+          <div style="margin-top: 30px">
+            <a href="#" class="btn btn-accent" id="cta-path-btn"
+              >Begin Your Analysis</a
+            >
+            <a
+              href="jobs.html"
+              class="btn btn-outline"
+              style="color: white; border-color: white"
+              >Browse Open Roles</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Lynex Careers</h3>
+            <p>
+              The next-generation job platform powered by artificial
+              intelligence.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>For Candidates</h3>
+            <ul class="footer-links">
+              <li><a href="jobs.html">Browse Jobs</a></li>
+              <li><a href="career-path.html">Career Path</a></li>
+              <li><a href="resources.html">Skill Assessment</a></li>
+              <li><a href="dashboard.html">Application Dashboard</a></li>
+              <li><a href="resources.html">Resource Center</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>For Employers</h3>
+            <ul class="footer-links">
+              <li><a href="#">Post a Job</a></li>
+              <li><a href="#">Talent Search</a></li>
+              <li><a href="#">Employer Branding</a></li>
+              <li><a href="#">Recruitment Analytics</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+           <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Lynex Softwares and AI
+              </li>
+              <li><i class="fas fa-phone"></i> +254 712 345 678</li>
+              <li><i class="fas fa-envelope"></i> careers@lynexsoftware.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2023 Lynex Softwares and AI. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/modals.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/main.js"></script>
+
+    <style>
+      .path-hero {
+        padding: 180px 0 100px;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        color: white;
+        text-align: center;
+      }
+
+      .path-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+        padding: 80px 0;
+      }
+
+      .path-visual {
+        background-color: var(--light);
+        border-radius: var(--radius);
+        padding: 40px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--shadow);
+      }
+
+      .path-progress {
+        margin-top: 30px;
+      }
+
+      .progress-bar {
+        width: 100%;
+        height: 8px;
+        background-color: var(--gray-light);
+        border-radius: 4px;
+        overflow: hidden;
+        margin: 10px 0;
+      }
+
+      .progress-fill {
+        height: 100%;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        border-radius: 4px;
+      }
+
+      .progress-labels {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8rem;
+        color: var(--gray);
+      }
+
+      .path-steps {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+      .path-step {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+      }
+
+      .step-icon {
+        width: 50px;
+        height: 50px;
+        background-color: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+      }
+
+      .story-details {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid var(--gray-light);
+      }
+
+      .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .timeline-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .year {
+        font-weight: 600;
+        color: var(--primary);
+      }
+
+      .role {
+        font-size: 0.9rem;
+        color: var(--gray);
+      }
+
+      .skills-developed {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .skill {
+        padding: 3px 8px;
+        background-color: rgba(37, 99, 235, 0.1);
+        color: var(--primary);
+        border-radius: 12px;
+        font-size: 0.8rem;
+      }
+
+      .achievements {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .achievement {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.9rem;
+      }
+
+      .achievement i {
+        color: var(--accent);
+      }
+
+      .skills-roadmap {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        margin-top: 50px;
+      }
+
+      .path-category {
+        background: white;
+        padding: 30px;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      .skill-levels {
+        margin-top: 20px;
+      }
+
+      .level {
+        margin-bottom: 25px;
+      }
+
+      .level h4 {
+        color: var(--primary);
+        margin-bottom: 10px;
+        font-size: 1rem;
+      }
+
+      .level ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .level li {
+        padding: 5px 0;
+        position: relative;
+        padding-left: 20px;
+      }
+
+      .level li:before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+      }
+
+      @media (max-width: 768px) {
+        .path-container {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        .skills-roadmap {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const ctaBtn = document.getElementById("cta-path-btn");
+        if (ctaBtn) {
+          ctaBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (typeof showPathAnalysisModal === "function") {
+              showPathAnalysisModal();
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
