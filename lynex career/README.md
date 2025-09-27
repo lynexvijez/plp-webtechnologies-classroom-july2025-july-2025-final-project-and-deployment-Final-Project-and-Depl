@@ -5,6 +5,8 @@ Lynex Careers Portal is a comprehensive, AI-powered job platform designed to rev
 The platform addresses the critical gap I observed in many companies' hiring portals during my research.
 
 ---
+WORKING LINK   https://lynexvijez.github.io/Lynex_Careers/  
+
 
 ## 🎯 Inspiration & Problem Statement
 
@@ -224,3 +226,4 @@ Cross-browser tested
 
 🏆 Conclusion<br>
 The Lynex Careers Portal represents a major advancement in recruitment technology, bridging the gap between outdated systems and modern user expectations. By leveraging AI, responsive design, and candidate-first principles, it creates a scalable foundation that benefits both companies and job seekers.
+
